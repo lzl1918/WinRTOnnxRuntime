@@ -1,0 +1,12 @@
+import "OnnxSession.idl";
+
+namespace WinRTOnnxRuntime
+{
+	[default_interface]
+	runtimeclass OnnxRuntime : Windows.Foundation.IClosable
+	{
+		OnnxSession LoadSession(String model);
+
+		static OnnxRuntime Create();
+	}
+}

@@ -1,0 +1,8 @@
+namespace WinRTOnnxRuntime
+{
+	[default_interface]
+	runtimeclass OnnxSession : Windows.Foundation.IClosable
+	{
+
+	}
+}

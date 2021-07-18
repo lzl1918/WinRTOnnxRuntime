@@ -1,0 +1,8 @@
+namespace WinRTOnnxRuntime
+{
+    [default_interface]
+    runtimeclass FloatTensor
+    {
+        FloatTensor(Int64[] dimensions, Single[] data);
+    }
+}
