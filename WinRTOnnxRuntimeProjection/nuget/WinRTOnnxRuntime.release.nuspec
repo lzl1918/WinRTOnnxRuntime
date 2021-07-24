@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+	<metadata>
+		<id>WinRTOnnxRuntime</id>
+		<version>0.1.0-prerelease</version>
+		<authors>Hake</authors>
+		<description>A sample package creating the WinRTOnnxRuntime projections</description>
+		<dependencies>
+			<group targetFramework=".NETCoreApp3.0" />
+			<group targetFramework="UAP10.0" />
+      <group targetFramework=".NETFramework4.7.2" />
+			<group targetFramework="net5.0-windows10.0.19041.0" />
+		</dependencies>
+	</metadata>
+	<files>
+		<!--Support net472, netcore3, net5, uap, c++ -->
+    <!--Arch-specific implementation DLLs should be copied into RID-relative folders -->
+    <file src="..\..\_build\x64\Release\WinRTOnnxRuntime\bin\WinRTOnnxRuntime\WinRTOnnxRuntime.winmd" target="ref\netcoreapp3.0\WinRTOnnxRuntime.winmd" />
+    <file src="..\..\_build\x64\Release\WinRTOnnxRuntime\bin\WinRTOnnxRuntime\WinRTOnnxRuntime.winmd" target="ref\uap10.0\WinRTOnnxRuntime.winmd" />
+    <file src="..\..\_build\x64\Release\WinRTOnnxRuntime\bin\WinRTOnnxRuntime\WinRTOnnxRuntime.winmd" target="ref\net472\WinRTOnnxRuntime.winmd" />
+    <file src="..\..\_build\x64\Release\WinRTOnnxRuntimeProjection\bin\WinRTOnnxRuntimeProjection.dll" target="ref\net5.0-windows10.0.19041.0\WinRTOnnxRuntimeProjection.dll" />
+
+    <file src="..\..\_build\Win32\Release\WinRTOnnxRuntime\bin\WinRTOnnxRuntime\WinRTOnnxRuntime.winmd" target="runtimes\win-x86\lib\netcoreapp3.0\WinRTOnnxRuntime.winmd" />
+    <file src="..\..\_build\Win32\Release\WinRTOnnxRuntime\bin\WinRTOnnxRuntime\WinRTOnnxRuntime.winmd" target="runtimes\win-x86\lib\uap10.0\WinRTOnnxRuntime.winmd" />
+    <file src="..\..\_build\Win32\Release\WinRTOnnxRuntime\bin\WinRTOnnxRuntime\WinRTOnnxRuntime.winmd" target="runtimes\win-x86\lib\net472\WinRTOnnxRuntime.winmd" />
+    <file src="..\..\_build\x86\Release\WinRTOnnxRuntimeProjection\bin\WinRTOnnxRuntimeProjection.dll" target="runtimes\win-x86\lib\net5.0-windows10.0.19041.0\WinRTOnnxRuntimeProjection.dll" />
+    <file src="..\..\_build\Win32\Release\WinRTOnnxRuntime\bin\WinRTOnnxRuntime\WinRTOnnxRuntime.dll" target="runtimes\win-x86\native\WinRTOnnxRuntime.dll" />
+    <file src="..\..\_build\Win32\Release\WinRTOnnxRuntime\bin\WinRTOnnxRuntime\onnxruntime.dll" target="runtimes\win-x86\native\onnxruntime.dll" />
+
+    <file src="..\..\_build\x64\Release\WinRTOnnxRuntime\bin\WinRTOnnxRuntime\WinRTOnnxRuntime.winmd" target="runtimes\win-x64\lib\netcoreapp3.0\WinRTOnnxRuntime.winmd" />
+    <file src="..\..\_build\x64\Release\WinRTOnnxRuntime\bin\WinRTOnnxRuntime\WinRTOnnxRuntime.winmd" target="runtimes\win-x64\lib\uap10.0\WinRTOnnxRuntime.winmd" />
+    <file src="..\..\_build\x64\Release\WinRTOnnxRuntime\bin\WinRTOnnxRuntime\WinRTOnnxRuntime.winmd" target="runtimes\win-x64\lib\net472\WinRTOnnxRuntime.winmd" />
+    <file src="..\..\_build\x64\Release\WinRTOnnxRuntimeProjection\bin\WinRTOnnxRuntimeProjection.dll" target="runtimes\win-x64\lib\net5.0-windows10.0.19041.0\WinRTOnnxRuntimeProjection.dll" />
+    <file src="..\..\_build\x64\Release\WinRTOnnxRuntime\bin\WinRTOnnxRuntime\WinRTOnnxRuntime.dll" target="runtimes\win-x64\native\WinRTOnnxRuntime.dll" />
+    <file src="..\..\_build\x64\Release\WinRTOnnxRuntime\bin\WinRTOnnxRuntime\onnxruntime.dll" target="runtimes\win-x64\native\onnxruntime.dll" />
+	</files>
+</package>
