@@ -21,5 +21,6 @@
 		<file src="..\..\_build\x64\Debug\WinRTOnnxRuntimeProjection\bin\WinRTOnnxRuntimeProjection.dll" target="lib\net5.0-windows10.0.19041.0\WinRTOnnxRuntimeProjection.dll" />
     <!--Arch-specific implementation DLLs should be copied into RID-relative folders -->
     <file src="..\..\_build\x64\Debug\WinRTOnnxRuntime\bin\WinRTOnnxRuntime\WinRTOnnxRuntime.dll" target="runtimes\win10-x64\native\WinRTOnnxRuntime.dll" />
+    <file src="..\..\_build\x64\Debug\WinRTOnnxRuntime\bin\WinRTOnnxRuntime\onnxruntime.dll" target="runtimes\win10-x64\native\onnxruntime.dll" />
 	</files>
 </package>
